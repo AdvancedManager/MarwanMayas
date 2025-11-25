@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebLearn</title>
+  <link rel="stylesheet" href="formatpro.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="Clipped_image_20251025_190416.png" alt="WebLearn Logo">
+        </div>
+        <div class="brand-text">
+          <h1>WebLearn</h1>
+          <span>Learn HTML • CSS • JavaScript • PHP</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="HtmlLearn.html" class="nav-link">HTML</a>
+        <a href="LearnCSS.html" class="nav-link">CSS</a>
+        <a href="LearnJS.html" class="nav-link">JavaScript</a>
+        <a href="LearnPHP.html" class="nav-link">PHP</a>
+        <a href="GoodsManag.html" class="nav-link ">Goods Management</a>
+        <a href="About.html" class="nav-link">About</a>
+      </nav>
+
+      <!-- Login Button -->
+      <button class="open-auth-btn" onclick="openAuth()">Log IN</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2 class="hero-subtitle">Practical Web Applications</h2>
+        <h1 class="hero-title">Learn Web Development From Zero</h1>
+        <p class="hero-desc">
+          This educational website is your simple guide to start learning front-end and back-end web development:
+          HTML for structure, CSS for design, JavaScript for interaction, and PHP for dynamic websites.
+        </p>
+        <div class="hero-cta">
+          <a href="HtmlLearn.html" class="btn btn-primary">Start with HTML</a>
+          <a href="About.html" class="btn btn-outline">About the Devloper</a>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-card">
+          <h3>HTML Basics</h3>
+          <p>Learn how to build the structure of web pages using tags, elements, and attributes.</p>
+        </div>
+        <div class="hero-card">
+          <h3>CSS Styling</h3>
+          <p>Control colors, fonts, layout, and make your pages look modern and professional.</p>
+        </div>
+        <div class="hero-card">
+          <h3>JavaScript Logic</h3>
+          <p>Add interactivity, events, validation, and dynamic behavior to your pages.</p>
+        </div>
+        <div class="hero-card">
+          <h3>PHP &amp; Backend</h3>
+          <p>Connect your website to the server, forms, databases, and build real web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <h2 class="section-title">What will the student learn?</h2>
+      <p class="section-subtitle">
+        This project is designed as a simple training platform for web development. The student can browse lessons,
+        practice with examples, and solve quizzes in Arabic-friendly style with English code.
+      </p>
+
+      <div class="lessons-grid">
+        <article class="lesson">
+          <h3>Track 1 – HTML</h3>
+          <p>Everything about web page structure: headings, paragraphs, links, images, tables, forms, and semantic tags.</p>
+          <h4>Includes</h4>
+          <ul>
+            <li>~15 lessons</li>
+            <li>Exercises &amp; examples</li>
+            <li>HTML quiz + final exam</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>Track 2 – CSS</h3>
+          <p>Learn how to style your pages using colors, fonts, layout, flexbox, grid, and responsive design.</p>
+          <h4>Includes</h4>
+          <ul>
+            <li>~15 lessons</li>
+            <li>Practice tasks</li>
+            <li>CSS quiz + final exam</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>Track 3 – JavaScript</h3>
+          <p>Programming in the browser: variables, conditions, loops, functions, DOM, events, and simple projects.</p>
+          <h4>Includes</h4>
+          <ul>
+            <li>~15 lessons</li>
+            <li>Interactive examples</li>
+            <li>JS quiz + final exam</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>Track 4 – PHP</h3>
+          <p>Back-end basics: PHP syntax, forms, sessions, simple login, and connecting to a database (theoretically).</p>
+          <h4>Includes</h4>
+          <ul>
+            <li>~15 lessons</li>
+            <li>Server-side exercises</li>
+            <li>PHP quiz + final exam</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    WebLearn © 2025 Devlped by Marwan Mayas - 773660267
+  </footer>
+
+  <!-- ========== CLEAN LOGIN / REGISTER POPUP ========== -->
+  <div id="auth-modal" class="auth-modal">
+    <div class="auth-content">
+
+      <!-- Login Form -->
+      <div id="login-form" class="auth-box">
+        <h2> Log In</h2>
+
+        <input type="email" id="login-email" placeholder="Gmail" required>
+        <input type="text" id="login-username" placeholder="username" required>
+        <input type="password" id="login-password" placeholder="password" required>
+
+        <button onclick="doLogin()" class="btn btn-primary">Log In</button>
+
+        <p class="auth-switch">
+          Don't have an Account
+          <a href="#" onclick="showRegister()">  Create new account</a>
+        </p>
+
+        <div id="login-msg"></div>
+      </div>
+
+      <!-- Register Form -->
+      <div id="register-form" class="auth-box" style="display:none;">
+        <h2>Create new account</h2>
+
+        <input type="email" id="reg-email" placeholder="yourmail@domain.com" required>
+        <input type="text" id="reg-username" placeholder="username" required>
+        <input type="password" id="reg-password" placeholder="password" required>
+
+        <button onclick="doRegister()" class="btn btn-primary">Register</button>
+
+        <p class="auth-switch">
+          Have an Account?
+          <a href="#" onclick="showLogin()"> Log In</a>
+        </p>
+
+        <div id="register-msg"></div>
+      </div>
+
+      <button class="close-popup" onclick="closeAuth()">Exit</button>
+
+    </div>
+  </div>
+
+  <!-- ========== SCRIPT FIXED ========== -->
+  <script>
+  function openAuth(){
+    document.getElementById("auth-modal").style.display = "block";
+  }
+  function closeAuth(){
+    document.getElementById("auth-modal").style.display = "none";
+  }
+
+  function showRegister(){
+    document.getElementById("login-form").style.display = "none";
+    document.getElementById("register-form").style.display = "block";
+  }
+
+  function showLogin(){
+    document.getElementById("register-form").style.display = "none";
+    document.getElementById("login-form").style.display = "block";
+  }
+
+  function doRegister(){
+    let email = document.getElementById("reg-email").value;
+    let user  = document.getElementById("reg-username").value;
+    let pass  = document.getElementById("reg-password").value;
+
+    if(email === "" || user === "" || pass === ""){
+      document.getElementById("register-msg").innerHTML = "All Fields Must be Filled";
+      document.getElementById("register-msg").style.color = "red";
+      return;
+    }
+
+    // Save user in LocalStorage
+    localStorage.setItem("user_email", email);
+    localStorage.setItem("user_name", user);
+    localStorage.setItem("user_pass", pass);
+
+    document.getElementById("register-msg").innerHTML = "Accout was Created Succefully";
+    document.getElementById("register-msg").style.color = "green";
+
+    setTimeout(() => showLogin(), 1000);
+  }
+
+  function doLogin(){
+    let email = document.getElementById("login-email").value;
+    let user  = document.getElementById("login-username").value;
+    let pass  = document.getElementById("login-password").value;
+
+    let savedEmail = localStorage.getItem("user_email");
+    let savedUser  = localStorage.getItem("user_name");
+    let savedPass  = localStorage.getItem("user_pass");
+
+    if(email === savedEmail && user === savedUser && pass === savedPass){
+      document.getElementById("login-msg").innerHTML = "Log IN Done";
+      document.getElementById("login-msg").style.color = "green";
+
+      setTimeout(() => closeAuth(), 1000);
+    } else {
+      document.getElementById("login-msg").innerHTML = "Incorrect Log IN Data";
+      document.getElementById("login-msg").style.color = "red";
+    }
+  }
+  </script>
+
+</body>
+</html>
