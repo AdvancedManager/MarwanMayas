@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLearn</title>
+    <link rel="stylesheet" href="formatpro.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+     <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="Clipped_image_20251025_190416.png" alt="WebLearn Logo">
+        </div>
+        <div class="brand-text">
+          <h1>WebLearn</h1>
+          <span>Learn HTML • CSS • JavaScript • PHP</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="HtmlLearn.html" class="nav-link">HTML</a>
+        <a href="LearnCSS.html" class="nav-link">CSS</a>
+        <a href="LearnJS.html" class="nav-link">JavaScript</a>
+        <a href="LearnPHP.html" class="nav-link">PHP</a>
+        <a href="GoodsManag.html" class="nav-link">Goods Management</a>
+        <a href="About.html" class="nav-link">About</a>
+      </nav>
+
+     
+    </div>
+  </header>
+
+    <div class="mang">
+        <div class="head">
+            <h2>project management system</h2>
+            <p>مروان عبدالله عبدالله مياس</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"> 0 </small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit">CREAT</button>
+        </div>
+        <div class="outputs">
+            <div class="serchblock">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getsearchmood(this.id)" id="searchtitle" >search by title</button>
+                    <button onclick="getsearchmood(this.id)" id="searchcategory">search by category</button>
+                </div>
+            </div>
+            <div id="deleteall">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

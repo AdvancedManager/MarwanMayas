@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn CSS – WebLearn</title>
+  <link rel="stylesheet" href="formatpro.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="Clipped_image_20251025_190416.png" alt="WebLearn Logo">
+        </div>
+        <div class="brand-text">
+          <h1>WebLearn</h1>
+          <span>HTML • CSS • JavaScript • PHP</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="HtmlLearn.html" class="nav-link">HTML</a>
+        <a href="LearnCSS.html" class="nav-link active">CSS</a>
+        <a href="LearnJS.html" class="nav-link">JavaScript</a>
+        <a href="LearnPHP.html" class="nav-link">PHP</a>
+        <a href="GoodsManag.html" class="nav-link">Goods Management</a>
+        <a href="About.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2 class="hero-subtitle">Design &amp; Style</h2>
+        <h1 class="hero-title">CSS Full Course</h1>
+        <p class="hero-desc">
+          CSS (Cascading Style Sheets) controls how your HTML looks: colors, fonts, layout, spacing, animations, and more.
+          In this track you will learn how to build beautiful and responsive pages.
+        </p>
+        <div class="hero-cta">
+          <a href="#lessons" class="btn btn-primary">Start CSS Lessons</a>
+          <a href="#css-quiz" class="btn btn-outline">Try CSS Quiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- Lessons -->
+      <section id="lessons">
+        <h2 class="section-title">CSS Lessons</h2>
+        <p class="section-subtitle">
+          CSS is all about presentation.  
+          Learn the fundamentals step-by-step with practical examples and exercises.
+        </p>
+
+        <div class="lessons-grid">
+
+          <article class="lesson" id="css-intro">
+            <h3>1. What is CSS?</h3>
+            <p>CSS stands for <strong>Cascading Style Sheets</strong>. It describes how HTML elements are displayed.</p>
+            <p>With CSS you can control colors, fonts, margins, borders, backgrounds, and layout.</p>
+            <div class="code">
+/* Example: make all paragraphs blue */
+p {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+            </div>
+            <h4>Exercise</h4>
+            <p>غيّر لون نص الفقرات في صفحتك إلى لون مختلف، وجرّب تغيير نوع الخط والحجم.</p>
+          </article>
+
+          <article class="lesson" id="css-ways">
+            <h3>2. Ways to Add CSS</h3>
+            <p>You can add CSS in three ways: inline, internal, and external.</p>
+            <div class="code">
+&lt;!-- Inline --&gt;
+&lt;p style="color:red"&gt;Hello&lt;/p&gt;
+
+&lt;!-- Internal --&gt;
+&lt;style&gt;
+  p {{ color: green; }}
+&lt;/style&gt;
+
+&lt;!-- External --&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>إنشئ ملف style.css مستقل، واربطه بصفحتك باستخدام &lt;link&gt; ثم اكتب داخله بعض التنسيقات.</p>
+          </article>
+
+          <article class="lesson" id="css-selectors">
+            <h3>3. Selectors</h3>
+            <p>Selectors tell CSS which elements to style: by tag, class, id, or attribute.</p>
+            <div class="code">
+/* Tag selector */
+p {{ color: #e5e7eb; }}
+
+/* Class selector */
+.card {{ background:#111827; }}
+
+/* ID selector */
+#main-title {{ font-size: 32px; }}
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف كلاس باسم <code>box</code> لبعض العناصر، واكتب CSS يضيف لها خلفية وحدود.</p>
+          </article>
+
+          <article class="lesson" id="css-color">
+            <h3>4. Colors &amp; Backgrounds</h3>
+            <p>Colors can be written by name, HEX, RGB, or HSL. Backgrounds can be solid, gradient, or images.</p>
+            <div class="code">
+body {{
+  background: #0f172a;
+}}
+
+.hero {{
+  background: linear-gradient(135deg, #1d4ed8, #f97316);
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>غيّر خلفية الهيدر إلى تدرّج لوني (gradient) واختبر أكثر من لون حتى تحصل على شكل جميل.</p>
+          </article>
+
+          <article class="lesson" id="css-box-model">
+            <h3>5. Box Model (Margin, Border, Padding)</h3>
+            <p>Every element is a box with content, padding, border, and margin.</p>
+            <div class="code">
+.card {{
+  padding: 16px;
+  border: 1px solid #4b5563;
+  margin: 12px 0;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>طبّق box model على كرت واحد في الصفحة، وغيّر القيم حتى تفهم الفرق بين margin و padding.</p>
+          </article>
+
+          <article class="lesson" id="css-typography">
+            <h3>6. Fonts &amp; Text</h3>
+            <p>Use CSS to control font family, size, weight, line-height, and text alignment.</p>
+            <div class="code">
+h1 {{
+  font-family: "Tahoma", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}}
+
+p {{
+  line-height: 1.8;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>غيّر خط العناوين إلى خط مختلف عن الفقرات، واجعل النص في الفوتر في المنتصف.</p>
+          </article>
+
+          <article class="lesson" id="css-display">
+            <h3>7. Display &amp; Inline / Block</h3>
+            <p>The <code>display</code> property controls how an element behaves (block, inline, inline-block, flex, etc.).</p>
+            <div class="code">
+nav a {{
+  display: inline-block;
+  padding: 8px 12px;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>حوّل عناصر القائمة في الـ navbar إلى inline-block ليكون بينها مسافة متساوية.</p>
+          </article>
+
+          <article class="lesson" id="css-flexbox">
+            <h3>8. Flexbox Basics</h3>
+            <p>Flexbox makes it easy to create flexible layouts that adapt to different screens.</p>
+            <div class="code">
+.container {{
+  display: flex;
+  gap: 16px;
+}}
+
+.sidebar {{
+  flex: 1;
+}}
+
+.content {{
+  flex: 3;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>قسّم الصفحة إلى عمودين: قائمة جانبية ومحتوى رئيسي باستخدام flexbox.</p>
+          </article>
+
+          <article class="lesson" id="css-grid">
+            <h3>9. CSS Grid Basics</h3>
+            <p>Grid is powerful for building two-dimensional layouts with rows and columns.</p>
+            <div class="code">
+.grid {{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ شبكة صور (3 أعمدة) لعرض لقطات شاشة من مشروعك.</p>
+          </article>
+
+          <article class="lesson" id="css-position">
+            <h3>10. Positioning</h3>
+            <p>Use <code>position</code> (static, relative, absolute, fixed, sticky) to control where elements appear.</p>
+            <div class="code">
+.badge {{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background:#f97316;
+  padding:4px 8px;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>ضع شارة "New" في زاوية صورة باستخدام position: absolute مع وضعية relative للأب.</p>
+          </article>
+
+          <article class="lesson" id="css-responsive">
+            <h3>11. Responsive Design &amp; Media Queries</h3>
+            <p>Responsive design means your site looks good on mobile, tablet, and desktop.</p>
+            <div class="code">
+@media (max-width: 768px) {{
+  .nav {{
+    flex-direction: column;
+  }}
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف media query يجعل عناصر الدروس تظهر في عمود واحد عندما يكون عرض الشاشة صغير.</p>
+          </article>
+
+          <article class="lesson" id="css-buttons">
+            <h3>12. Buttons &amp; Hover Effects</h3>
+            <p>Buttons can be styled with background, border-radius, and hover transitions.</p>
+            <div class="code">
+.btn-primary {{
+  background: linear-gradient(135deg,#f97316,#facc15);
+  border-radius: 999px;
+  padding: 10px 18px;
+  transition: transform 0.2s;
+}}
+
+.btn-primary:hover {{
+  transform: translateY(-2px);
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>صمّم زر "ابدأ التعلم" مع تأثير hover يرفع الزر قليلاً ويغيّر لون الخلفية.</p>
+          </article>
+
+          <article class="lesson" id="css-animations">
+            <h3>13. Transitions &amp; Animations</h3>
+            <p>Use transitions for smooth changes and keyframes for more complex animations.</p>
+            <div class="code">
+.button {{
+  transition: background 0.3s ease;
+}}
+
+.button:hover {{
+  background: #22c55e;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف انتقال (transition) على رابط في القائمة بحيث يتغير اللون تدريجياً عند المرور عليه.</p>
+          </article>
+
+          <article class="lesson" id="css-variables">
+            <h3>14. CSS Variables</h3>
+            <p>CSS variables let you reuse values like colors and spacing across your styles.</p>
+            <div class="code">
+:root {{
+  --main-color: #f97316;
+}}
+
+h1 {{
+  color: var(--main-color);
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ متغير لون أساسي في :root واستخدمه في خلفية الهيدر والأزرار.</p>
+          </article>
+
+          <article class="lesson" id="css-mini-project">
+            <h3>15. Mini Project: Simple Landing Page</h3>
+            <p>Combine your HTML and CSS skills to build a small one-page website.</p>
+            <ul>
+              <li>Hero section with title, text, and button.</li>
+              <li>Features section using flexbox or grid.</li>
+              <li>Footer with contact information.</li>
+            </ul>
+            <h4>Exercise</h4>
+            <p>صمّم صفحة ترحيبية لمشروع "شبكة إنترنت" فيها قسم للخدمات، الأسعار، وطريقة التواصل.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CSS Quiz -->
+      <section id="css-quiz" class="quiz-section">
+        <h2 class="section-title">CSS Quiz</h2>
+        <p class="section-subtitle">اختبار سريع على أهم مفاهيم CSS.</p>
+
+        <div class="quiz-box">
+          <h4>Question 1</h4>
+          <div class="quiz-question">Which property is used to change the text color?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-q1" value="1"> color</label>
+            <label><input type="radio" name="css-q1" value="0"> font-style</label>
+            <label><input type="radio" name="css-q1" value="0"> background</label>
+            <label><input type="radio" name="css-q1" value="0"> text-align</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-q1', 1)">تحقق من الإجابة</button>
+          <div id="css-q1-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 2</h4>
+          <div class="quiz-question">Which CSS selector selects elements with class "card"?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-q2" value="1"> .card</label>
+            <label><input type="radio" name="css-q2" value="0"> #card</label>
+            <label><input type="radio" name="css-q2" value="0"> card#</label>
+            <label><input type="radio" name="css-q2" value="0"> card</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-q2', 1)">تحقق من الإجابة</button>
+          <div id="css-q2-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 3</h4>
+          <div class="quiz-question">Which property controls the space outside the element's border?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-q3" value="1"> margin</label>
+            <label><input type="radio" name="css-q3" value="0"> padding</label>
+            <label><input type="radio" name="css-q3" value="0"> border-radius</label>
+            <label><input type="radio" name="css-q3" value="0"> width</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-q3', 1)">تحقق من الإجابة</button>
+          <div id="css-q3-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 4</h4>
+          <div class="quiz-question">Which layout system is best for building a row of flexible cards?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-q4" value="1"> flexbox</label>
+            <label><input type="radio" name="css-q4" value="0"> float</label>
+            <label><input type="radio" name="css-q4" value="0"> position: absolute</label>
+            <label><input type="radio" name="css-q4" value="0"> z-index</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-q4', 1)">تحقق من الإجابة</button>
+          <div id="css-q4-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 5</h4>
+          <div class="quiz-question">Which rule is used for responsive design?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-q5" value="1"> @media</label>
+            <label><input type="radio" name="css-q5" value="0"> @font-face</label>
+            <label><input type="radio" name="css-q5" value="0"> @import</label>
+            <label><input type="radio" name="css-q5" value="0"> @keyframes</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-q5', 1)">تحقق من الإجابة</button>
+          <div id="css-q5-result" class="quiz-result"></div>
+        </div>
+      </section>
+
+      <!-- CSS Final Quiz -->
+      <section id="css-final" class="quiz-section">
+        <h2 class="section-title">CSS Final Quiz</h2>
+        <p class="section-subtitle">اختبار نهائي يغطي أهم مفاهيم CSS في هذا المسار.</p>
+
+        <div class="quiz-box">
+          <h4>Final 1</h4>
+          <div class="quiz-question">Which property controls the space inside the element border?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-f1" value="0"> margin</label>
+            <label><input type="radio" name="css-f1" value="1"> padding</label>
+            <label><input type="radio" name="css-f1" value="0"> gap</label>
+            <label><input type="radio" name="css-f1" value="0"> border</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-f1', 1)">تحقق من الإجابة</button>
+          <div id="css-f1-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 2</h4>
+          <div class="quiz-question">Which CSS property changes the font size?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-f2" value="1"> font-size</label>
+            <label><input type="radio" name="css-f2" value="0"> font-weight</label>
+            <label><input type="radio" name="css-f2" value="0"> line-height</label>
+            <label><input type="radio" name="css-f2" value="0"> font-style</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-f2', 1)">تحقق من الإجابة</button>
+          <div id="css-f2-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 3</h4>
+          <div class="quiz-question">Which value of display creates a grid layout?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-f3" value="0"> block</label>
+            <label><input type="radio" name="css-f3" value="1"> grid</label>
+            <label><input type="radio" name="css-f3" value="0"> inline</label>
+            <label><input type="radio" name="css-f3" value="0"> inline-block</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-f3', 1)">تحقق من الإجابة</button>
+          <div id="css-f3-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 4</h4>
+          <div class="quiz-question">Which CSS feature lets you reuse color values?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-f4" value="1"> CSS variables</label>
+            <label><input type="radio" name="css-f4" value="0"> comments</label>
+            <label><input type="radio" name="css-f4" value="0"> ids</label>
+            <label><input type="radio" name="css-f4" value="0"> display</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-f4', 1)">تحقق من الإجابة</button>
+          <div id="css-f4-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 5</h4>
+          <div class="quiz-question">Which unit is best for responsive font size?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="css-f5" value="0"> px</label>
+            <label><input type="radio" name="css-f5" value="1"> rem</label>
+            <label><input type="radio" name="css-f5" value="0"> cm</label>
+            <label><input type="radio" name="css-f5" value="0"> inch</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('css-f5', 1)">تحقق من الإجابة</button>
+          <div id="css-f5-result" class="quiz-result"></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    WebLearn - CSS Track • Styling, Layout, and Responsive Design
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

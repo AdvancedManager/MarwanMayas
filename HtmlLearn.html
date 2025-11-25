@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn HTML – WebLearn</title>
+  <link rel="stylesheet" href="formatpro.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="Clipped_image_20251025_190416.png" alt="WebLearn Logo">
+        </div>
+        <div class="brand-text">
+          <h1>WebLearn</h1>
+          <span>HTML • CSS • JavaScript • PHP</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="HtmlLearn.html" class="nav-link active">HTML</a>
+        <a href="LearnCSS.html" class="nav-link">CSS</a>
+        <a href="LearnJS.html" class="nav-link">JavaScript</a>
+        <a href="LearnPHP.html" class="nav-link">PHP</a>
+        <a href="GoodsManag.html" class="nav-link">Goods Management</a>
+        <a href="About.html" class="nav-link">About</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2 class="hero-subtitle">Start Here</h2>
+        <h1 class="hero-title">HTML Full Course</h1>
+        <p class="hero-desc">
+          HTML (HyperText Markup Language) is the backbone of every website.  
+          In this track the student will learn how to build a complete page from zero:
+          structure, text, images, links, tables, forms, and semantic tags.
+        </p>
+        <div class="hero-cta">
+          <a href="#lessons" class="btn btn-primary">Go to Lessons</a>
+          <a href="#html-quiz" class="btn btn-outline">Try HTML Quiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lessons -->
+  <main class="section">
+    <div class="container">
+      <section id="lessons">
+        <h2 class="section-title">HTML Lessons</h2>
+        <p class="section-subtitle">
+          Each lesson is short, simple, and focused.  
+          After completing all lessons, try the quiz to test your knowledge.
+        </p>
+
+        <div class="lessons-grid">
+
+          <!-- 1 -->
+          <article class="lesson" id="html-intro">
+            <h3>1. What is HTML?</h3>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>. It is used to describe the structure of web pages.</p>
+            <p>HTML is not a programming language, it is a <strong>markup language</strong> that uses tags to tell the browser what each part means.</p>
+            <div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My first page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>Create a new HTML file and write a simple page with a title and one heading that contains your name.</p>
+          </article>
+
+          <!-- 2 -->
+          <article class="lesson" id="html-structure">
+            <h3>2. Basic Page Structure</h3>
+            <p>An HTML document has three main parts: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+            <p>The <code>&lt;head&gt;</code> contains information about the page (title, meta tags, links). The <code>&lt;body&gt;</code> contains the visible content.</p>
+            <div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Student Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف فقرتين جديدتين في &lt;body&gt;، الأولى تعريف بسيط عن نفسك، والثانية هواياتك.</p>
+          </article>
+
+          <!-- 3 -->
+          <article class="lesson" id="html-headings-paragraphs">
+            <h3>3. Headings &amp; Paragraphs</h3>
+            <p>Headings go from <code>&lt;h1&gt;</code> (largest) to <code>&lt;h6&gt;</code> (smallest). Paragraphs use <code>&lt;p&gt;</code>.</p>
+            <div class="code">
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;p&gt;This is a normal paragraph of text.&lt;/p&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>صمّم صفحة فيها عنوان رئيسي h1 لاسم الموقع، وعناوين فرعية h2 للأقسام (Home, Courses, About).</p>
+          </article>
+
+          <!-- 4 -->
+          <article class="lesson" id="html-links">
+            <h3>4. Links &amp; Navigation</h3>
+            <p>Use <code>&lt;a&gt;</code> tags to create links between pages or to external sites.</p>
+            <div class="code">
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ صفحتين: <strong>index.html</strong> و<strong>about.html</strong>، واربط بينهما باستخدام الروابط.</p>
+          </article>
+
+          <!-- 5 -->
+          <article class="lesson" id="html-images">
+            <h3>5. Images</h3>
+            <p>Use the <code>&lt;img&gt;</code> tag to display images. Always add the <code>alt</code> attribute for accessibility.</p>
+            <div class="code">
+&lt;img src="images/logo.png" alt="Site Logo" width="120" height="120"&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>ضيف شعار مشروعك في الصفحة الرئيسية، واكتب نص بديل يصف الشعار لو ما اشتغلت الصورة.</p>
+          </article>
+
+          <!-- 6 -->
+          <article class="lesson" id="html-lists">
+            <h3>6. Ordered &amp; Unordered Lists</h3>
+            <p>HTML has ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>).</p>
+            <div class="code">
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Step 1&lt;/li&gt;
+  &lt;li&gt;Step 2&lt;/li&gt;
+&lt;/ol&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>اعمل قائمة unordered لهواياتك، وقائمة ordered لخطوات تثبيت برنامج المتصفح.</p>
+          </article>
+
+          <!-- 7 -->
+          <article class="lesson" id="html-tables">
+            <h3>7. Tables</h3>
+            <p>Tables organize data in rows and columns using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.</p>
+            <div class="code">
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Grade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ali&lt;/td&gt;
+    &lt;td&gt;A&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>صمّم جدول لنتائج ثلاثة طلاب في مادة "Web Applications" يحتوي على الاسم والدرجة.</p>
+          </article>
+
+          <!-- 8 -->
+          <article class="lesson" id="html-forms">
+            <h3>8. Forms &amp; Inputs</h3>
+            <p>Forms allow users to send data to the server using fields like text, email, password, and buttons.</p>
+            <div class="code">
+&lt;form action="register.php" method="post"&gt;
+  &lt;label&gt;Name:&lt;/label&gt;
+  &lt;input type="text" name="name"&gt;&lt;br&gt;
+  &lt;label&gt;Email:&lt;/label&gt;
+  &lt;input type="email" name="email"&gt;&lt;br&gt;
+  &lt;button type="submit"&gt;Register&lt;/button&gt;
+&lt;/form&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>اعمل نموذج تسجيل دخول يحتوي على حقل username و password وزر Login فقط.</p>
+          </article>
+
+          <!-- 9 -->
+          <article class="lesson" id="html-attributes">
+            <h3>9. Attributes &amp; Links Target</h3>
+            <p>Attributes provide extra information to elements, like <code>href</code>, <code>src</code>, <code>alt</code>, <code>title</code>, and <code>id</code>.</p>
+            <div class="code">
+&lt;a href="https://example.com" target="_blank" title="Open new tab"&gt;
+  Open site
+&lt;/a&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>جرّب إضافة &lt;a&gt; يفتح موقع جامعتك في تبويب جديد باستخدام الخاصية <code>target="_blank"</code>.</p>
+          </article>
+
+          <!-- 10 -->
+          <article class="lesson" id="html-div-span">
+            <h3>10. Div &amp; Span</h3>
+            <p><code>&lt;div&gt;</code> is a block-level container, <code>&lt;span&gt;</code> is inline. They help you group content for styling.</p>
+            <div class="code">
+&lt;div class="card"&gt;
+  &lt;h2&gt;Course Title&lt;/h2&gt;
+  &lt;p&gt;Short description here&lt;/p&gt;
+&lt;/div&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>استخدم &lt;div&gt; لتجميع عنوان، صورة، وفقرة عن مادة "تطبيقات الويب" وكأنها كرت واحد.</p>
+          </article>
+
+          <!-- 11 -->
+          <article class="lesson" id="html-semantic">
+            <h3>11. Semantic HTML</h3>
+            <p>Semantic tags describe the meaning of content: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>.</p>
+            <div class="code">
+&lt;header&gt;Site Header&lt;/header&gt;
+&lt;nav&gt;Main Menu&lt;/nav&gt;
+&lt;main&gt;Page Content&lt;/main&gt;
+&lt;footer&gt;Footer Info&lt;/footer&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>أعد كتابة صفحتك الرئيسية باستخدام &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt; بدل &lt;div&gt; فقط.</p>
+          </article>
+
+          <!-- 12 -->
+          <article class="lesson" id="html-media">
+            <h3>12. Audio &amp; Video</h3>
+            <p>You can embed audio and video using <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.</p>
+            <div class="code">
+&lt;video width="320" controls&gt;
+  &lt;source src="intro.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف فيديو تعليمي قصير عن HTML في صفحتك مع أزرار التحكم (تشغيل/إيقاف).</p>
+          </article>
+
+          <!-- 13 -->
+          <article class="lesson" id="html-comments">
+            <h3>13. Comments</h3>
+            <p>Comments help you write notes inside your code without showing them in the browser.</p>
+            <div class="code">
+&lt;!-- This is a comment, it will not appear on the page --&gt;
+&lt;p&gt;Visible text&lt;/p&gt;
+            </div>
+            <h4>Exercise</h4>
+            <p>أضف تعليق في أعلى كل صفحة يوضح اسم الطالب، المادة، واسم الدكتور.</p>
+          </article>
+
+          <!-- 14 -->
+          <article class="lesson" id="html-best-practices">
+            <h3>14. Best Practices</h3>
+            <p>Write clean, readable HTML so that other developers (and your future self) can understand it easily.</p>
+            <ul>
+              <li>Use lowercase tag names and proper indentation.</li>
+              <li>Use semantic tags instead of too many generic &lt;div&gt; elements.</li>
+              <li>Add meaningful <code>alt</code> text to images.</li>
+              <li>Validate your HTML using an online validator.</li>
+            </ul>
+            <h4>Exercise</h4>
+            <p>راجع صفحة قديمة كتبتها وحاول تحسين تنسيق الكود وإضافة تعليقات وأسماء كلاس واضحة.</p>
+          </article>
+
+          <!-- 15 -->
+          <article class="lesson" id="html-mini-project">
+            <h3>15. Mini Project: Simple Educational Page</h3>
+            <p>Now combine everything to build a small one-page website for a course at your college.</p>
+            <ul>
+              <li>Use header, nav, main, and footer.</li>
+              <li>Add at least three sections (Overview, Lessons, Contact).</li>
+             <li>Use headings, paragraphs, lists, images, and a simple form.</li>
+            </ul>
+            <h4>Exercise</h4>
+            <p>صمّم صفحة لمادة &quot;تطبيقات الويب&quot; تحتوي على وصف المادة، أهدافها، وجدول المحتوى.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- HTML Quiz -->
+      <section id="html-quiz" class="quiz-section">
+        <h2 class="section-title">HTML Quiz</h2>
+        <p class="section-subtitle">اختر الإجابة الصحيحة لكل سؤال، ثم اضغط على زر التحقق.</p>
+
+        <div class="quiz-box">
+          <h4>Question 1</h4>
+          <div class="quiz-question">What does HTML stand for?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-q1" value="0"> Hyperlinks and Text Markup Language</label>
+            <label><input type="radio" name="html-q1" value="1"> HyperText Markup Language</label>
+            <label><input type="radio" name="html-q1" value="0"> Home Tool Markup Language</label>
+            <label><input type="radio" name="html-q1" value="0"> Hyperlink Text Machine Language</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-q1', 1)">تحقق من الإجابة</button>
+          <div id="html-q1-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 2</h4>
+          <div class="quiz-question">Which tag is used for the largest heading?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-q2" value="1"> &lt;h1&gt;</label>
+            <label><input type="radio" name="html-q2" value="0"> &lt;h6&gt;</label>
+            <label><input type="radio" name="html-q2" value="0"> &lt;head&gt;</label>
+            <label><input type="radio" name="html-q2" value="0"> &lt;p&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-q2', 1)">تحقق من الإجابة</button>
+          <div id="html-q2-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 3</h4>
+          <div class="quiz-question">Which tag is used to create a link?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-q3" value="1"> &lt;a&gt;</label>
+            <label><input type="radio" name="html-q3" value="0"> &lt;link&gt;</label>
+            <label><input type="radio" name="html-q3" value="0"> &lt;href&gt;</label>
+            <label><input type="radio" name="html-q3" value="0"> &lt;nav&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-q3', 1)">تحقق من الإجابة</button>
+          <div id="html-q3-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 4</h4>
+          <div class="quiz-question">Which attribute is used to provide alternative text for an image?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-q4" value="1"> alt</label>
+            <label><input type="radio" name="html-q4" value="0"> src</label>
+            <label><input type="radio" name="html-q4" value="0"> title</label>
+            <label><input type="radio" name="html-q4" value="0"> href</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-q4', 1)">تحقق من الإجابة</button>
+          <div id="html-q4-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Question 5</h4>
+          <div class="quiz-question">Which tag is used to create a table row?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-q5" value="1"> &lt;tr&gt;</label>
+            <label><input type="radio" name="html-q5" value="0"> &lt;td&gt;</label>
+            <label><input type="radio" name="html-q5" value="0"> &lt;th&gt;</label>
+            <label><input type="radio" name="html-q5" value="0"> &lt;row&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-q5', 1)">تحقق من الإجابة</button>
+          <div id="html-q5-result" class="quiz-result"></div>
+        </div>
+      </section>
+
+      <!-- HTML Final Quiz -->
+      <section id="html-final" class="quiz-section">
+        <h2 class="section-title">HTML Final Quiz</h2>
+        <p class="section-subtitle">اختبار نهائي بسيط يغطي أهم مواضيع HTML في هذا المسار.</p>
+
+        <div class="quiz-box">
+          <h4>Final 1</h4>
+          <div class="quiz-question">Which element wraps all visible content on the page?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-f1" value="0"> &lt;head&gt;</label>
+            <label><input type="radio" name="html-f1" value="1"> &lt;body&gt;</label>
+            <label><input type="radio" name="html-f1" value="0"> &lt;title&gt;</label>
+            <label><input type="radio" name="html-f1" value="0"> &lt;meta&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-f1', 1)">تحقق من الإجابة</button>
+          <div id="html-f1-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 2</h4>
+          <div class="quiz-question">Which semantic tag is best for navigation links?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-f2" value="1"> &lt;nav&gt;</label>
+            <label><input type="radio" name="html-f2" value="0"> &lt;section&gt;</label>
+            <label><input type="radio" name="html-f2" value="0"> &lt;article&gt;</label>
+            <label><input type="radio" name="html-f2" value="0"> &lt;div&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-f2', 1)">تحقق من الإجابة</button>
+          <div id="html-f2-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 3</h4>
+          <div class="quiz-question">Which tag is used to create a text input field inside a form?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-f3" value="1"> &lt;input type="text"&gt;</label>
+            <label><input type="radio" name="html-f3" value="0"> &lt;text&gt;</label>
+            <label><input type="radio" name="html-f3" value="0"> &lt;textarea&gt;</label>
+            <label><input type="radio" name="html-f3" value="0"> &lt;p&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-f3', 1)">تحقق من الإجابة</button>
+          <div id="html-f3-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 4</h4>
+          <div class="quiz-question">Which attribute is used to link CSS file to HTML page?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-f4" value="1"> &lt;link rel="stylesheet" href="style.css"&gt;</label>
+            <label><input type="radio" name="html-f4" value="0"> &lt;style src="style.css"&gt;</label>
+            <label><input type="radio" name="html-f4" value="0"> &lt;css&gt;style.css&lt;/css&gt;</label>
+            <label><input type="radio" name="html-f4" value="0"> &lt;meta css="style.css"&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-f4', 1)">تحقق من الإجابة</button>
+          <div id="html-f4-result" class="quiz-result"></div>
+        </div>
+
+        <div class="quiz-box">
+          <h4>Final 5</h4>
+          <div class="quiz-question">Which tag is correct for adding a comment?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="html-f5" value="1"> &lt;!-- comment --&gt;</label>
+            <label><input type="radio" name="html-f5" value="0"> // comment</label>
+            <label><input type="radio" name="html-f5" value="0"> # comment</label>
+            <label><input type="radio" name="html-f5" value="0"> &lt;comment&gt;</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('html-f5', 1)">تحقق من الإجابة</button>
+          <div id="html-f5-result" class="quiz-result"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    WebLearn – HTML Track • Practice, Quiz, and Final Exam
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

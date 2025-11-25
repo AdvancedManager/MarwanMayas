@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn PHP – WebLearn</title>
+  <link rel="stylesheet" href="formatpro.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">
+        <img src="Clipped_image_20251025_190416.png" alt="Logo" />
+      </div>
+      <div class="brand-text">
+        <h1>WebLearn</h1>
+        <span>HTML • CSS • JavaScript • PHP</span>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="HtmlLearn.html" class="nav-link">HTML</a>
+      <a href="LearnCSS.html" class="nav-link">CSS</a>
+      <a href="LearnJS.html" class="nav-link">JavaScript</a>
+      <a href="LearnPHP.html" class="nav-link active">PHP</a>
+      <a href="GoodsManag.html" class="nav-link">Goods Management</a>
+      <a href="About.html" class="nav-link">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <h2 class="hero-subtitle">Back-End Logic</h2>
+    <h1 class="hero-title">PHP Full Course</h1>
+    <p class="hero-desc">
+      PHP is a server-side scripting language used to build dynamic websites, 
+      manage forms, connect to databases, and more.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#php-lessons" class="btn btn-primary">Start Learning</a>
+      <a href="#php-quiz" class="btn btn-outline">PHP Quiz</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+
+    <!-- Lessons -->
+    <section id="php-lessons" class="section">
+      <h2 class="section-title">PHP Lessons</h2>
+      <p class="section-subtitle">دروس عملية مختصرة وممتعة في عالم تطوير الويب الخلفي.</p>
+
+      <div class="lessons-grid">
+
+        <!-- LESSON 1 -->
+        <article class="lesson">
+          <h3>1. What is PHP?</h3>
+          <p>PHP is a server-side language used to build dynamic and interactive websites.</p>
+          <div class="code">
+&lt;?php
+echo "Hello PHP!";
+?&gt;
+          </div>
+          <h4>Exercise</h4>
+          <p>اكتب كود يعرض جملة ترحيبية بالمستخدم.</p>
+        </article>
+
+        <!-- LESSON 2 -->
+        <article class="lesson">
+          <h3>2. PHP Syntax</h3>
+          <p>Every PHP script begins with <code>&lt;?php</code> and ends with <code>?&gt;</code>.</p>
+          <div class="code">
+&lt;?php
+$name = "Ali";
+echo $name;
+?&gt;
+          </div>
+          <h4>Exercise</h4>
+          <p>أنشئ متغير يحتوي اسمك وقم بطباعته.</p>
+        </article>
+
+        <!-- LESSON 3 -->
+        <article class="lesson">
+          <h3>3. Variables</h3>
+          <p>Variables in PHP always start with the <code>$</code> symbol.</p>
+          <div class="code">
+$age = 20;
+$city = "Sanaa";
+          </div>
+          <h4>Exercise</h4>
+          <p>اكتب 3 متغيرات (الاسم – العمر – المدينة).</p>
+        </article>
+
+        <!-- LESSON 4 -->
+        <article class="lesson">
+          <h3>4. Data Types</h3>
+          <p>PHP supports strings, numbers, booleans, arrays, and objects.</p>
+          <div class="code">
+$name = "Mohammed";
+$marks = [90, 80, 70];
+$isActive = true;
+          </div>
+          <h4>Exercise</h4>
+          <p>كوّن مصفوفة تحتوي على 5 مواد دراسية.</p>
+        </article>
+
+        <!-- LESSON 5 -->
+        <article class="lesson">
+          <h3>5. Strings</h3>
+          <p>Strings can be concatenated using the <code>.</code> operator.</p>
+          <div class="code">
+$fullName = "Ali" . " Mohammed";
+echo $fullName;
+          </div>
+          <h4>Exercise</h4>
+          <p>ادمج اسمك الأول والأخير باستخدام .</p>
+        </article>
+
+        <!-- LESSON 6 -->
+        <article class="lesson">
+          <h3>6. Arrays</h3>
+          <p>Arrays store multiple values in one variable.</p>
+          <div class="code">
+$fruits = ["Apple","Banana","Mango"];
+echo $fruits[1];
+          </div>
+          <h4>Exercise</h4>
+          <p>اطبع ثاني عنصر من مصفوفة مكونة منك.</p>
+        </article>
+
+        <!-- LESSON 7 -->
+        <article class="lesson">
+          <h3>7. Associative Arrays</h3>
+          <p>Associative arrays hold key-value pairs.</p>
+          <div class="code">
+$user = [
+  "name" =&gt; "Ali",
+  "age" =&gt; 21
+];
+echo $user["name"];
+          </div>
+          <h4>Exercise</h4>
+          <p>أنشئ مصفوفة تحتوي (الاسم – العمر – الجامعة).</p>
+        </article>
+
+        <!-- LESSON 8 -->
+        <article class="lesson">
+          <h3>8. Conditions</h3>
+          <p>Conditions allow PHP to make decisions.</p>
+          <div class="code">
+if ($age &gt;= 18) {
+  echo "Adult";
+} else {
+  echo "Minor";
+}
+          </div>
+          <h4>Exercise</h4>
+          <p>اكتب كود يتحقق هل الطالب ناجح أو راسب حسب الدرجة.</p>
+        </article>
+
+        <!-- LESSON 9 -->
+        <article class="lesson">
+          <h3>9. Loops</h3>
+          <p>PHP supports for, while, and foreach loops.</p>
+          <div class="code">
+for ($i=1; $i&lt;=5; $i++) {
+  echo $i;
+}
+          </div>
+          <h4>Exercise</h4>
+          <p>اطبع الأرقام من 1 إلى 10 باستخدام loop.</p>
+        </article>
+
+        <!-- LESSON 10 -->
+        <article class="lesson">
+          <h3>10. Functions</h3>
+          <p>Functions group reusable code.</p>
+          <div class="code">
+function greet($name) {
+  return "Hello " . $name;
+}
+echo greet("Yemen");
+          </div>
+          <h4>Exercise</h4>
+          <p>أنشئ function يرجع مربع رقم.</p>
+        </article>
+
+        <!-- LESSON 11 -->
+        <article class="lesson">
+          <h3>11. Superglobals</h3>
+          <p>Superglobals like <code>$_GET</code> and <code>$_POST</code> store form data.</p>
+          <div class="code">
+echo $_GET["user"];
+          </div>
+          <h4>Exercise</h4>
+          <p>اعرض قيمة في الرابط باستخدام GET.</p>
+        </article>
+
+        <!-- LESSON 12 -->
+        <article class="lesson">
+          <h3>12. Form Handling</h3>
+          <p>PHP handles input submitted from HTML forms.</p>
+          <div class="code">
+if ($_SERVER["REQUEST_METHOD"]=="POST") {
+  echo $_POST["name"];
+}
+          </div>
+          <h4>Exercise</h4>
+          <p>صمّم فورم بسيط يعرض الاسم بعد الضغط.</p>
+        </article>
+
+        <!-- LESSON 13 -->
+        <article class="lesson">
+          <h3>13. Include & Require</h3>
+          <p>Used to import reusable files.</p>
+          <div class="code">
+include "header.php";
+          </div>
+          <h4>Exercise</h4>
+          <p>أنشئ ملف مشترك header واستخدمه في صفحة ثانية.</p>
+        </article>
+
+        <!-- LESSON 14 -->
+        <article class="lesson">
+          <h3>14. Connecting to MySQL (Basics)</h3>
+          <p>Use MySQLi or PDO to connect to a database.</p>
+          <div class="code">
+$conn = new mysqli("localhost","root","","school");
+          </div>
+          <h4>Exercise</h4>
+          <p>اكتب اتصال قاعدة بيانات school.</p>
+        </article>
+
+        <!-- LESSON 15 -->
+        <article class="lesson">
+          <h3>15. Final Mini Project</h3>
+          <p>Build a simple login form using POST + PHP validation.</p>
+          <h4>Exercise</h4>
+          <p>صمّم واجهة تسجيل دخول وقم بالتحقق منها بـ PHP.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PHP Quiz -->
+    <section id="php-quiz" class="quiz-section">
+      <h2 class="section-title">PHP Quiz</h2>
+
+      <div class="quiz-box">
+        <h4>Question 1</h4>
+        <div class="quiz-question">Which symbol starts every PHP variable?</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="php-q1" value="0"> #</label>
+          <label><input type="radio" name="php-q1" value="1"> $</label>
+          <label><input type="radio" name="php-q1" value="0"> @</label>
+          <label><input type="radio" name="php-q1" value="0"> &amp;</label>
+        </div>
+        <button class="quiz-btn" onclick="checkQuiz('php-q1',1)">تحقق</button>
+        <div id="php-q1-result" class="quiz-result"></div>
+      </div>
+
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  WebLearn - PHP Track
+</footer>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>

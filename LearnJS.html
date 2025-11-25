@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learn JavaScript – WebLearn</title>
+  <link rel="stylesheet" href="formatpro.css" />
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">
+          <img src="Clipped_image_20251025_190416.png" alt="Logo">
+        </div>
+        <div class="brand-text">
+          <h1>WebLearn</h1>
+          <span>HTML • CSS • JavaScript • PHP</span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="HtmlLearn.html" class="nav-link">HTML</a>
+        <a href="LearnCSS.html" class="nav-link">CSS</a>
+        <a href="LearnJS.html" class="nav-link active">JavaScript</a>
+        <a href="LearnPHP.html" class="nav-link">PHP</a>
+        <a href="GoodsManag.html" class="nav-link">Goods Management</a>
+        <a href="About.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2 class="hero-subtitle">Dynamic Web Logic</h2>
+        <h1 class="hero-title">JavaScript Full Course</h1>
+        <p class="hero-desc">
+          JavaScript is the brain of the web.  
+          It controls interactivity, validation, animations, dynamic content, and much more.
+        </p>
+        <div class="hero-cta">
+          <a href="#lessons" class="btn btn-primary">Go to Lessons</a>
+          <a href="#js-quiz" class="btn btn-outline">Try JS Quiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+
+      <!-- JS Lessons -->
+      <section id="lessons">
+        <h2 class="section-title">JavaScript Lessons</h2>
+        <p class="section-subtitle">
+          الدروس هنا عملية، بسيطة، وتعليمية… وكأنك تشغّل عقلك داخل الصفحة نفسها.
+        </p>
+
+        <div class="lessons-grid">
+
+          <!-- 1 -->
+          <article class="lesson">
+            <h3>1. What is JavaScript?</h3>
+            <p>JavaScript is a programming language that runs inside the browser and controls interactive behavior.</p>
+            <div class="code">
+console.log("Hello JavaScript!");
+            </div>
+            <h4>Exercise</h4>
+            <p>اطبع جملة باسمك في console باستخدام <code>console.log()</code>.</p>
+          </article>
+
+          <!-- 2 -->
+          <article class="lesson">
+            <h3>2. Variables (let, const, var)</h3>
+            <p>Variables store data for usage later in the script.</p>
+            <div class="code">
+let name = "Ali";
+const age = 20;
+var city = "Sanaa";
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ ثلاث متغيرات: الاسم، العمر، والهواية.</p>
+          </article>
+
+          <!-- 3 -->
+          <article class="lesson">
+            <h3>3. Data Types</h3>
+            <p>JavaScript has numbers, strings, booleans, arrays, objects, and more.</p>
+            <div class="code">
+let isStudent = true;
+let marks = [90, 85, 70];
+let person = {{ name: "Ali", age: 21 }};
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ object يحتوي على اسمك وعمرك وقسمك الدراسي.</p>
+          </article>
+
+          <!-- 4 -->
+          <article class="lesson">
+            <h3>4. Operators</h3>
+            <p>JS supports arithmetic, comparison, and logical operators.</p>
+            <div class="code">
+let sum = 5 + 3;
+let check = (10 > 3) && (2 < 5);
+            </div>
+            <h4>Exercise</h4>
+            <p>اكتب معادلة تجمع رقمين وتطبع الناتج في console.</p>
+          </article>
+
+          <!-- 5 -->
+          <article class="lesson">
+            <h3>5. Conditions (if, else)</h3>
+            <p>Conditions allow your code to make decisions.</p>
+            <div class="code">
+if (age >= 18) {{
+  console.log("Adult");
+}} else {{
+  console.log("Minor");
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>اكتب برنامج يخبرك هل الطالب ناجح أو راسب حسب درجته.</p>
+          </article>
+
+          <!-- 6 -->
+          <article class="lesson">
+            <h3>6. Loops (for, while)</h3>
+            <p>Loops repeat code multiple times.</p>
+            <div class="code">
+for (let i = 1; i <= 5; i++) {{
+  console.log("Count:", i);
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ loop يطبع الأرقام من 10 إلى 1.</p>
+          </article>
+
+          <!-- 7 -->
+          <article class="lesson">
+            <h3>7. Functions</h3>
+            <p>Functions group reusable code.</p>
+            <div class="code">
+function greet(name) {{
+  return "Hello " + name;
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>اكتب function ترجع مربع رقم (number²).</p>
+          </article>
+
+          <!-- 8 -->
+          <article class="lesson">
+            <h3>8. Arrays</h3>
+            <p>Arrays store multiple values.</p>
+            <div class="code">
+let fruits = ["Apple", "Orange", "Banana"];
+console.log(fruits[1]);
+            </div>
+            <h4>Exercise</h4>
+            <p>كوّن مصفوفة فيها 5 مواد دراسية.</p>
+          </article>
+
+          <!-- 9 -->
+          <article class="lesson">
+            <h3>9. Objects</h3>
+            <p>Objects store data in key-value pairs.</p>
+            <div class="code">
+let laptop = {{ brand: "HP", cpu: "i9" }};
+console.log(laptop.cpu);
+            </div>
+            <h4>Exercise</h4>
+            <p>أنشئ object يحتوي على معلومات جهازك الشخصي.</p>
+          </article>
+
+          <!-- 10 -->
+          <article class="lesson">
+            <h3>10. DOM Manipulation</h3>
+            <p>DOM allows JS to control HTML elements.</p>
+            <div class="code">
+document.getElementById("title").textContent = "Changed!";
+            </div>
+            <h4>Exercise</h4>
+            <p>غيّر نص <code>h1</code> في صفحة HTML باستخدام JavaScript.</p>
+          </article>
+
+          <!-- 11 -->
+          <article class="lesson">
+            <h3>11. Events</h3>
+            <p>Events detect user actions like clicks or typing.</p>
+            <div class="code">
+button.onclick = function() {{
+  alert("Clicked!");
+}};
+            </div>
+            <h4>Exercise</h4>
+            <p>اكتب زرّ يظهر رسالة alert عند الضغط عليه.</p>
+          </article>
+
+          <!-- 12 -->
+          <article class="lesson">
+            <h3>12. Forms & Validation</h3>
+            <p>JS validates input before sending it to the server.</p>
+            <div class="code">
+if (nameInput.value === "") {{
+  alert("Name required");
+}}
+            </div>
+            <h4>Exercise</h4>
+            <p>افحص إذا كان حقل البريد الإلكتروني فارغ ثم أعطِ تحذير.</p>
+          </article>
+
+          <!-- 13 -->
+          <article class="lesson">
+            <h3>13. JSON Basics</h3>
+            <p>JSON is a format for storing structured data.</p>
+            <div class="code">
+let text = '{{ "name": "Ali", "age": 20 }}';
+let obj = JSON.parse(text);
+            </div>
+            <h4>Exercise</h4>
+            <p>حوّل object إلى JSON string باستخدام JSON.stringify().</p>
+          </article>
+
+          <!-- 14 -->
+          <article class="lesson">
+            <h3>14. Local Storage</h3>
+            <p>Used for saving data inside browser.</p>
+            <div class="code">
+localStorage.setItem("theme", "dark");
+            </div>
+            <h4>Exercise</h4>
+            <p>احفظ اسم مستخدم في localStorage ثم اطبعه عند فتح الصفحة.</p>
+          </article>
+
+          <!-- 15 -->
+          <article class="lesson">
+            <h3>15. Mini Project</h3>
+            <p>Create a simple JS project using buttons, input fields, and DOM manipulation.</p>
+            <h4>Exercise</h4>
+            <p>صمّم آلة حاسبة بسيطة تجمع رقمين وتعرض الناتج.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- JS QUIZ -->
+      <section id="js-quiz" class="quiz-section">
+        <h2 class="section-title">JavaScript Quiz</h2>
+        <p class="section-subtitle">اختبار بسيط يجرب فهمك لأساسيات JavaScript.</p>
+
+        <div class="quiz-box">
+          <h4>Question 1</h4>
+          <div class="quiz-question">Which keyword declares a constant variable?</div>
+          <div class="quiz-options">
+            <label><input type="radio" name="js-q1" value="0"> var</label>
+            <label><input type="radio" name="js-q1" value="1"> const</label>
+            <label><input type="radio" name="js-q1" value="0"> let</label>
+            <label><input type="radio" name="js-q1" value="0"> static</label>
+          </div>
+          <button class="quiz-btn" onclick="checkQuiz('js-q1', 1)">تحقق</button>
+          <div id="js-q1-result" class="quiz-result"></div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    WebLearn – JavaScript Track
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
